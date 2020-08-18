@@ -15,8 +15,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-
-  width: 1600px;
 }
 
 button {
@@ -52,6 +50,7 @@ p {
   align-items: center;
 
   max-width: 1600px;
+  min-width: 1200px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +83,7 @@ p {
 .main-nav {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 /*logo*/
@@ -408,7 +407,8 @@ border-width: 0px;
     color var(--time-animation) var(--time-function);
 }
 
-.client-list .item:hover {
+.client-list .item:hover,
+.client-list .item:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -419,14 +419,23 @@ border-width: 0px;
 
 /* footer   */
 .footer-main {
-  background: #2f303a;
+
   height: 252px;
-  padding: 60px;
+  padding: 60px 0px;
+  
+  max-width: 1600px;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #2f303a;
+
 }
 
 .container.footer {
   display: flex;
   justify-content: space-between;
+
 }
 
 .footer-adress .post {
@@ -464,6 +473,7 @@ border-width: 0px;
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
+
 
 .footer .logo-studio {
   color: var(--primary-white-color);
@@ -544,7 +554,7 @@ border-width: 0px;
 
 .work-list .element {
   background-color: var(--primary-white-color);
-  border: 6px solid #eeeeee;
+  border: 1px solid #eeeeee;
 
   box-shadow: none;
 
@@ -617,12 +627,22 @@ border-width: 0px;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
+  color: var(--primary-text-color);
+
 }
 
 .work-list .elem {
   padding: 20px;
+  text-decoration: none;
+}
+
+.work-list .link{
+
+  text-decoration: none;
+
 }
 /* modal window */
+
 .backdrope {
   position: fixed;
 
