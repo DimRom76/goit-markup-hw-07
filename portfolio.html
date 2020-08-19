@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -25,11 +26,15 @@
 
         <nav>
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
             <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+              <a href="./index.html" class="site-nav-link">Студия</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="site-nav-link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item"><a href="" class="site-nav-link">Контакты</a></li>
           </ul>
         </nav>
 
@@ -89,7 +94,7 @@
               </a>
             </li>
             <li class="element">
-              <a  class="link" href="">
+              <a class="link" href="">
                 <div class="work-list-img">
                   <img
                     src="./images/Portfolio/img2.jpg"
@@ -109,7 +114,7 @@
               </a>
             </li>
             <li class="element">
-              <a  class="link" href="">
+              <a class="link" href="">
                 <div class="work-list-img">
                   <img
                     src="./images/Portfolio/img3.jpg"
@@ -129,7 +134,7 @@
               </a>
             </li>
             <li class="element">
-              <a  class="link" href="">
+              <a class="link" href="">
                 <div class="work-list-img">
                   <img
                     src="./images/Portfolio/img4.jpg"
@@ -149,7 +154,7 @@
               </a>
             </li>
             <li class="element">
-              <a  class="link" href="">
+              <a class="link" href="">
                 <div class="work-list-img">
                   <img
                     src="./images/Portfolio/img5.jpg"
@@ -169,7 +174,7 @@
               </a>
             </li>
             <li class="element">
-              <a  class="link" href="">
+              <a class="link" href="">
                 <div class="work-list-img">
                   <img
                     src="./images/Portfolio/img6.jpg"
@@ -189,7 +194,7 @@
               </a>
             </li>
             <li class="element">
-              <a  class="link" href="">
+              <a class="link" href="">
                 <div class="work-list-img">
                   <img
                     src="./images/Portfolio/img7.jpg"
@@ -330,13 +335,18 @@
         <div>
           <form>
             <div class="footer-header">Подпишитесь на рассылку</div>
-            <input class="footer-input" type="text" name="mal-sent" placeholder="E-mail">
-            <a href="" class="button">Подписаться
+            <input
+              class="footer-input"
+              type="text"
+              name="mal-sent"
+              placeholder="E-mail"
+            />
+            <a href="" class="button"
+              >Подписаться
               <svg class="img-sent" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-sent"></use>
               </svg>
             </a>
-            
           </form>
         </div>
       </div>
